@@ -1,0 +1,4 @@
+-Testes de unidade testam um método ou uma classe de forma independente,
+enquanto um teste funcional testa uma funcionalidade completa do sistema.
+
+-Testes de unidade são rodam mais rapidamente.
