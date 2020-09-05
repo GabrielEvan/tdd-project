@@ -1,0 +1,2 @@
+A figura a cima mostra que o nosso processo inclui um ciclo de TDD guiado por testes de unidade
+aninhado dentro de um outro ciclo guiado por testes funcionais.
