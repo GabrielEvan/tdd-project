@@ -1,6 +1,7 @@
 from django.core.mail import send_mail
 from django.shortcuts import redirect
 from django.contrib import messages
+from django.contrib import auth
 
 
 def send_login_email(request):
@@ -15,4 +16,8 @@ def send_login_email(request):
         request,
         "Check your email, we've sent you a link you can use to log in."
     )
+    return redirect('/')
+
+
+def login(request):
     return redirect('/')
