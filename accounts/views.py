@@ -4,6 +4,7 @@ from django.contrib import messages
 from django.contrib import auth
 from accounts.models import Token
 from django.core.urlresolvers import reverse
+import sys
 
 
 def send_login_email(request):
@@ -27,4 +28,5 @@ def send_login_email(request):
 
 
 def login(request):
+    auth.authenticate(uid=request.GET.get('token'))
     return redirect('/')
